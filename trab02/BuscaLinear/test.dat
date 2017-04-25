@@ -1,0 +1,48 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "item.h"
+#include "arraylist.h"
+
+int main (int argc, char *argv[ ]) {
+   ArrayList *arraylist = new_arrayList();
+   
+//     printf("vazia=%d\n", isEmpty_arrayList(arraylist));
+//     print_arrayList(arraylist);
+
+//     destroy_arrayList(arraylist);
+
+  
+   for (int i = 0; i < 24; i++)
+      add_arrayList(arraylist, criar_item(i, i));
+//   print_arrayList(arraylist);
+//   for (int i = 0; i < 4; i++)
+//     add_arrayList(arraylist, criar_item(i, i));
+//   print_arrayList(arraylist);
+//     ArrayList *novo = subArray_arrayList(arraylist, 7, 15);
+//     print_arrayList(novo);
+
+//     for (int i = 7; i < 305; i++)
+//        imprimir_item(get_arrayList(arraylist, i));
+//     ArrayList *novo = clone_arrayList(arraylist);
+//     print_arrayList(novo);
+//     printf("tamanho=%d\n", size_arrayList(arraylist));
+
+//     printf("contem 5?=%d\n", contains_arrayList(arraylist, 5));
+//     printf("contem 37?=%d\n", contains_arrayList(arraylist, 37));
+
+//     printf("pos de 5=%d\n", indexOf_arrayList(arraylist, 5));
+//     printf("pos de 37=%d\n", indexOf_arrayList(arraylist, 37));
+   
+//     for (int i = 5; i < 15; i++)
+//        remove_arrayList(arraylist, i);
+//     print_arrayList(arraylist);
+//     printf("tamanho=%d\n", size_arrayList(arraylist));
+
+     set_arrayList(arraylist, 8, criar_item(10,10));
+     print_arrayList(arraylist);
+
+     destroy_arrayList(arraylist);
+//     destroy_arrayList(novo);
+
+   return 0;
+}
